@@ -39,7 +39,7 @@ const useStyles = makeStyles(theme => ({
     position: "relative",
     margin: "1rem 3rem 1rem 1rem",
     clear: "both",
-    background: "rgba(0,0,0,.4)",
+    background: "rgba(255,255,255,.1)",
     "&:after": {
       content: "''",
       position: "absolute"

@@ -19,11 +19,12 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "3rem",
   },
   TypedContainer: {
+    background: "rgba(255,255,255,.1)",
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "100vw",
+    width: "500px",
     textAlign: "center",
     zIndex: 1,
   },
@@ -49,11 +50,17 @@ const Header = () => {
             "MERN Stack",
             "React JS",
             "Node JS",
-            "Have a good day!",
-            "Have Fun",
+            "Singer",
+            "Marathon runner",
+            "Vegeterian",
+            "Doesn't a pro gamer",
+            "Programmer",
+            "Developer",
+            "Dreamer",
+            "And just family man ^_-"
           ]}
-          typeSpeed={40}
-          backSpeed={26}
+          typeSpeed={30}
+          backSpeed={15}
           loop
         />
       </Typography>

@@ -104,7 +104,7 @@ const Navbar = () => {
               <ArrowBack style={{ color: "#f4f7c5" }} />
             </IconButton>
             <Typography variant="h5" style={{ color: "#faeee7" }}>
-              Hello There! it's my portfolio
+              Hello There, have a good day^_- and have fun
             </Typography>
             <MobilRightMenuSlider
               anchor="right"
