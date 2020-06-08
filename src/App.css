@@ -4,6 +4,6 @@ body {
   -moz-background: cover;
   -o-background: cover;
   background: cover;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 /* header nav #ea907a , main text #faeee7 slider #fbc687 main title #faeee7 second title #e8e4e1 */ 
