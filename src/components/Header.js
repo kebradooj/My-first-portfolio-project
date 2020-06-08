@@ -1,22 +1,22 @@
 import React from "react";
-import {makeStyles} from "@material-ui/core"
+import { makeStyles } from "@material-ui/core";
 import { Typography, Avatar, Grid, Box } from "@material-ui/core";
 import Typed from "react-typed";
 import avatar from "../avatar.jpg";
 
 //Styles
-const useStyles = makeStyles(theme=> ({
+const useStyles = makeStyles((theme) => ({
   avatar: {
     width: theme.spacing(15),
     height: theme.spacing(15),
-    margin: theme.spacing(1)
+    margin: theme.spacing(1),
   },
   title: {
-    color: "#fff"
+    color: "#fff",
   },
   subtitle: {
     color: "#FF1493",
-    marginBottom: "3rem"
+    marginBottom: "3rem",
   },
   TypedContainer: {
     position: "absolute",
@@ -25,16 +25,16 @@ const useStyles = makeStyles(theme=> ({
     transform: "translate(-50%, -50%)",
     width: "100vw",
     textAlign: "center",
-    zIndex: 1
-  }
-}))
+    zIndex: 1,
+  },
+}));
 
 const Header = () => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <Box className={classes.TypedContainer}>
       <Grid container justify="center">
-      <Avatar className={classes.avatar} src={avatar} alt="Joseph Grey" />
+        <Avatar className={classes.avatar} src={avatar} alt="Joseph Grey" />
       </Grid>
       <Typography className={classes.title} variant="h4">
         <Typed strings={["Joodarbek Jyldyzbekov"]} typeSpeed={40} />
@@ -50,7 +50,7 @@ const Header = () => {
             "React JS",
             "Node JS",
             "Have a good day!",
-            "Have Fun"
+            "Have Fun",
           ]}
           typeSpeed={40}
           backSpeed={26}

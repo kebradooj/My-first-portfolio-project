@@ -1,4 +1,5 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
 import {
@@ -8,7 +9,7 @@ import {
   IconButton,
   ListItemText,
   ListItemIcon,
-  Avatar,//img
+  Avatar, //img
   Divider,
   List,
   Typography,
@@ -28,13 +29,14 @@ const useStyles = makeStyles((theme) => ({
   menuSliderContainer: {
     height: "100%",
     width: "250px",
-    background: "#054291",
+    background: "#ea907a",
   },
   avatar: {
     display: "block",
     margin: "0,5rem auto",
     width: theme.spacing(13),
     height: theme.spacing(13),
+    marginLeft: theme.spacing(4),
   },
   listItem: {
     color: "#faeee7",
@@ -45,10 +47,12 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
+    listPath: "/",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    listPath: "/resume",
   },
   {
     listIcon: <Apps />,
@@ -69,14 +73,16 @@ const Navbar = () => {
   };
   const classes = useStyles();
   const sideList = (slider) => (
-    <Box className={classes.menuSliderContainer} component="div"
-    onClick={toggleSlider(slider, false)}
+    <Box
+      className={classes.menuSliderContainer}
+      component="div"
+      onClick={toggleSlider(slider, false)}
     >
       <Avatar className={classes.avatar} src={avatar} alt="Joseph Grey" />
       <Divider />
       <List>
         {menuItems.map((lsItem, key) => (
-          <ListItem button key={key}>
+          <ListItem button key={key} component={Link} to={lsItem.listPath}>
             <ListItemIcon className={classes.listItem}>
               {lsItem.listIcon}
             </ListItemIcon>
