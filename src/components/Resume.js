@@ -116,7 +116,7 @@ const Resume = () => {
         </Typography>
         <Box component="div" className={classes.timeLine}>
           <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-            2016
+            2016-2019
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography variant="h5" align="center" className={classes.subHeading}>
@@ -130,7 +130,7 @@ const Resume = () => {
             </Typography>
           </Box>
           <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem}`}>
-            2019
+            2019-2020
           </Typography>
           <Box component="div" className={classes.timeLineItem}>
             <Typography variant="h5" align="center" className={classes.subHeading}>
