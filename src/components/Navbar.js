@@ -57,10 +57,12 @@ const menuItems = [
   {
     listIcon: <Apps />,
     listText: "Portfolio",
+    listPath: "/portfolio"
   },
   {
     listIcon: <ContactMail />,
     listText: "Contacts",
+    listPath: "/contacts"
   },
 ];
 const Navbar = () => {
