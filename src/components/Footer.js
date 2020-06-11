@@ -31,21 +31,25 @@ const Footer = () => {
         style={{padding: 0}}
         icon={<Telegram/>}
         className={classes.root}
+        href="https://t.me/kebradooj"
       />
       <BottomNavigationAction
         style={{padding: 0}}
         icon={<Twitter/>}
         className={classes.root}
+        href="https://twitter.com/kebradooj"
       />
       <BottomNavigationAction
         style={{padding: 0}}
         icon={<Github />}
         className={classes.root}
+        href="https://github.com/kebradooj"
       />
       <BottomNavigationAction
         style={{padding: 0}}
         icon={<LinkedIn/>}
         className={classes.root}
+        href="https://www.linkedin.com/in/kebradooj/"
       />
     </BottomNavigation>)
   )
