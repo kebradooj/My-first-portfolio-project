@@ -151,7 +151,7 @@ const Resume = () => {
               React JS & Node JS
             </Typography>
             <Typography variant="body1" align="center" style={{color: "lightGrey"}}>
-              TDTS
+              Some company
             </Typography>
             <Typography variant="subtitle1" align="center" style={{color: "#faeee7"}}>
               Have a good day
